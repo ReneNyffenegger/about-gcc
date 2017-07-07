@@ -1,9 +1,21 @@
 //
-//  gcc -finstrument-functions instrument-functions.c
+//  
+//  //   use -g flag for addr2line
+//  gcc -g -finstrument-functions instrument-functions.c
 //
 //  // Link with -ldl for dladdr()
 //  gcc -finstrument-functions instrument-functions.c -ldl
 //
+
+//
+//  Using addr2line
+//     make sure executable is compiled with -g
+//     Use -e to specify executable
+//     use -f to show function name
+//     execute addr2line with hex representation of addr, for
+//     example:
+//
+//        addr2line  -f -e a.out   0x400641
 
 #include <stdio.h>
 
@@ -29,7 +41,7 @@ void  __attribute__((no_instrument_function)) print_enter_exit(const char* enter
 void  __attribute__((no_instrument_function))  // Use this attribute so that this function is not traced
       __cyg_profile_func_enter                 // OSX: use profile_func_enter
    (
-    void* func,   // Address of function start. Can be looked up in symbol table (»addr2line« ?)
+    void* func,   // Address of function start. Can be looked up in symbol table with addr2line.
     void* caller  // 
    )
 {
