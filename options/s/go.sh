@@ -1,3 +1,7 @@
+#
+#   s: Remove all symbol table and relocation information from the executable. 
+#
+
 gcc        main.c  -o out
 gcc -s     main.c  -o out-s
 gcc    -g  main.c  -o out-g
