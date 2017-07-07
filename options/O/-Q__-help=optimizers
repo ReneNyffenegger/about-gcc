@@ -1,0 +1,4 @@
+#
+#  Find out the exact set of optimazations that are enabled at each level
+#
+gcc -Q --help=optimizers
