@@ -1,0 +1,4 @@
+*.s
+*.i
+*.o
+save-temps
