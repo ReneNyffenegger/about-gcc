@@ -6,7 +6,7 @@
 #define QuoteIdent(ident) #ident
 
 //   QuoteMacro can be used to turn the value
-//  (rather then the name/ident of the macro)
+//  (rather then the name/ident)of the macro
 //   into a string
 #define QuoteMacro(macro) QuoteIdent(macro)
 
