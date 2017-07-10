@@ -6,6 +6,6 @@ int main() {
   PRINT_FUNCTION("starting up");
 
   func_a("abc");
-  func_b("def aldkfjajdf;kajd");
+  func_b("def");
 
 }
