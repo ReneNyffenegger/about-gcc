@@ -19,4 +19,5 @@ int main() {
   printf("QuoteIdent(FRUIT)  = %s\n", QuoteIdent(FRUIT) );
   printf("QuoteMacro(FRUIT)  = %s\n", QuoteMacro(FRUIT) );
   printf("QuoteMacro(I_LIKE) = %s\n", QuoteMacro(I_LIKE));
+  printf("QuoteMacro(int)    = %s\n", QuoteMacro(int)   );
 }
