@@ -1,0 +1,1 @@
+echo | gcc -E -dM -x c - | sort
