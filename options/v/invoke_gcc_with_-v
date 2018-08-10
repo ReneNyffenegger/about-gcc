@@ -4,14 +4,14 @@
 #
 #  The following command redirects stderr to v.out
 #
-gcc -v main.c 2&> v.out
+gcc -v main.c 2> v.out
 
 #
 #  Some greps on v.out  
 #
-grep 'gcc version'         | v.out
-grep 'Thread model'        | v.out
-grep 'Configured with'     | v.out
-grep 'Target'              | v.out
-grep 'COLLECT_LTO_WRAPPER' | v.out
-grep 'COLLECT_GCC'         | v.out
+grep 'gcc version'           v.out
+grep 'Thread model'          v.out
+grep 'Configured with'       v.out
+grep 'Target'                v.out
+grep 'COLLECT_LTO_WRAPPER'   v.out
+grep 'COLLECT_GCC'           v.out
