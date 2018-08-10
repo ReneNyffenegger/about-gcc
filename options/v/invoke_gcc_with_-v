@@ -21,3 +21,8 @@ grep 'COLLECT_GCC'           v.out
 #   the -E flag
 #
 gcc -v assembly.S 2> v.out
+
+#
+#   With the .i suffix, cc1 is invoked with the -fpreprocessed flag
+#
+gcc -v already-preprocessed.i 2> v.out
