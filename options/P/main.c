@@ -1,5 +1,3 @@
 #include "foo.h"
 
-int main() {
-
-}
+int main() {}

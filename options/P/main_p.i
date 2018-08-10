@@ -1,3 +1,2 @@
 int foo();
-int main() {
-}
+int main() {}

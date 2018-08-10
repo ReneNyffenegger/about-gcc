@@ -9,6 +9,4 @@
 int foo();
 # 2 "main.c" 2
 
-int main() {
-
-}
+int main() {}
