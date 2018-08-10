@@ -1,5 +1,5 @@
 CFLAGS=-Wall
-CFLAGS+=-Werror
+# CFLAGS+=-Werror
 CFLAGS+=-W
 CFLAGS+=-g
 
