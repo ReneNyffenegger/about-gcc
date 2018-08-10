@@ -1,7 +1,4 @@
-all: main_p.o main.o
-
-main_p.o: main_p.i
-	gcc -c $< -o $@
+all: main_p.i main.i
 
 main.o: main.i
 	gcc -c $< -o $@
