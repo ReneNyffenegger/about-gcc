@@ -1,2 +1,2 @@
-a.out: already-preprocessed.c
+a.out: already-preprocessed.c Makefile
 	gcc -fpreprocessed $< -o $@

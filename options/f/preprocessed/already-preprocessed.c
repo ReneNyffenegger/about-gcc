@@ -3,5 +3,8 @@
 #define return baz
 
 int main() {
-  return 42;
+/*
+   Silly comment: return THE number.
+*/
+   return 42;
 }
