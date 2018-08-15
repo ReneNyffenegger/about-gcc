@@ -21,7 +21,10 @@ $(NOSTARTFILESOUT): prog.o
 $(NODEFAULTLIBSOUT): prog.o
 	-gcc -### -nodefaultlibs $< 2> $@
 
-# TODO: unrecognized command line option -nolibc
+# TODO:
+#   option -nolibc will aparently be available
+#   with gcc 8.2.
+#
 # 
 # $(NOLIBCOUT): prog.o
 # 	-gcc -### -nolibc        $< 2> $@
