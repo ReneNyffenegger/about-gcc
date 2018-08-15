@@ -1,4 +1,9 @@
-$(info TEMP=$(TEMP))
+ifndef TEMP
+  $(info TEMP not defined, setting to /tmp)
+  TEMP=/tmp
+else
+  $(info TEMP=$(TEMP))
+endif
 
 NORMALOUT=$(TEMP)/normal
 NOSTARTFILESOUT=$(TEMP)/nostartfiles
