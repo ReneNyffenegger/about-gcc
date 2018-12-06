@@ -1,6 +1,3 @@
-echo Show dependencies of files:
-echo ---------------------------
-cd src
-for c in *.c; do
-  gcc -MM $c
-done
+gcc -M main.c
+gcc -M hello-world.c
+gcc -M print-line.c
