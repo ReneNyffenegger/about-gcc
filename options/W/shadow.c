@@ -1,6 +1,6 @@
 //
 //     -Wshadow:
-//      Wanr about local variables shadowing another variable.
+//      Warn about local variables shadowing another variable.
 //
 // gcc -Wshadow shadow.c
 
@@ -17,5 +17,4 @@ int main() {
     printf("i=%d\n", i);
 
   }
-
 }
